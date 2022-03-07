@@ -7,8 +7,10 @@ public class Vocalist extends Musician {
         super(name, country, style, timePeriod);
         this.influencedBy = influencedBy;
     }
+
+    @Override
     public void show(){
-        System.out.printf("Name: %s, Country: %s, Style: %s, Time period: %s, Influenced by: %s%n",
+        System.out.printf("Musician Name: %s, Country: %s, Style: %s, Time period: %s, Influenced by: %s%n",
                 name, country, style, timePeriod, influencedBy);
     }
 

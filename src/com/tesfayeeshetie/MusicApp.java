@@ -15,7 +15,8 @@ public class MusicApp {
         Musician ray = new Vocalist("Ray Charles", "USA", "soul",
                 "1996", "Nat King Cole");
 
-        ArrayList<Song> library = new ArrayList<>();   // Create our library
+        // Create our library
+        ArrayList<Song> library = new ArrayList<>();
 
 
         Song music_1 = new Song("People Get Ready", curtis, "Relaxing",
@@ -29,7 +30,7 @@ public class MusicApp {
         Song music_5 = new Song("Hit the Road Jack on Saturday", ray, "Live",
                 "https://www.youtube.com/watch?v=CyVuYAHiZb8");
 
-
+    //Add a song to the library
         library.add(music_1);
         library.add(music_2);
         library.add(music_3);
@@ -40,6 +41,5 @@ public class MusicApp {
         for (Song music:library) {
             music.show();
         }
-
     }
 }

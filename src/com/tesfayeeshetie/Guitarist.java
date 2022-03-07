@@ -9,8 +9,9 @@ public class Guitarist extends Musician {
         this.numStrings = numStrings;
     }
 
+    @Override
     public void show(){
-        System.out.printf("Name: %s, Country: %s, Style: %s, Time period: %s, Number of strings: %s%n",
+        System.out.printf("Musician Name: %s, Country: %s, Style: %s, Time period: %s, Number of strings: %s%n",
                 name, country, style, timePeriod, numStrings);
     }
 }

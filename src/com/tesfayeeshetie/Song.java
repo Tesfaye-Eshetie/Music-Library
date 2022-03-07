@@ -13,7 +13,9 @@ public class Song {
         this.youtubeURL = youtubeURL;
     }
     public void show(){
-        System.out.printf("Title: %s%nMusician info: %s%nPlay list: %s%nYoutube URL: %s%n%n",
-                title, musician, playlist, youtubeURL);
+        System.out.printf("Title: %s%n" , title);
+        musician.show();
+        System.out.printf("Play list: %s%nYoutube URL: %s%n%n", playlist, youtubeURL);
+        }
     }
-}
+

@@ -7,8 +7,10 @@ public class TrumpetPlayer extends Musician {
         super(name, country, style, timePeriod);
         this.trumpetType = trumpetType;
     }
+
+    @Override
     public void show(){
-        System.out.printf("Name: %s, Country: %s, Style: %s, Time period: %s, Trumpet type %s%n",
+        System.out.printf("Musician Name: %s, Country: %s, Style: %s, Time period: %s, Trumpet type %s%n",
                 name, country, style, timePeriod, trumpetType);
     }
 }
