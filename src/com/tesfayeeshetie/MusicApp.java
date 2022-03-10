@@ -1,11 +1,11 @@
 package com.tesfayeeshetie;
 
+import java.io.File;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class MusicApp {
-    static java.util.Scanner sc;
-    static java.io.File myFile;
 
     public static void main(String[] argv) {
 
@@ -44,7 +44,7 @@ public class MusicApp {
 
         // Using a loop, display all your Songs
         for (Song music:library) {
-            music.show();
+            System.out.println(music.toString());
         }
         //Enhance the music library by adding a method to write the musicians in your song's library to disk
         try {
@@ -60,8 +60,8 @@ public class MusicApp {
 
         //        Read mySongs file and display the list of musician here
         try {
-            myFile = new java.io.File("mySongs.txt");
-            sc = new java.util.Scanner(myFile);
+            File myFile = new File("mySongs.txt");
+            Scanner sc = new Scanner(myFile);
 
             while ( sc.hasNextLine() ) {
                 System.out.println(sc.nextLine());

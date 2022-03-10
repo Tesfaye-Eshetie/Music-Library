@@ -9,9 +9,9 @@ public class Vocalist extends Musician {
     }
 
     @Override
-    public void show(){
-        System.out.printf("Musician Name: %s, Country: %s, Style: %s, Time period: %s, Influenced by: %s%n",
-                name, country, style, timePeriod, influencedBy);
+    public String toString() {
+        return "Vocalist: {" +
+                "influencedBy='" + influencedBy + '\'' +
+                '}' + '\n' + super.toString() + '\n';
     }
-
 }

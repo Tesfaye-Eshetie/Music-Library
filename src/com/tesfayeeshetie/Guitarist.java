@@ -10,8 +10,9 @@ public class Guitarist extends Musician {
     }
 
     @Override
-    public void show(){
-        System.out.printf("Musician Name: %s, Country: %s, Style: %s, Time period: %s, Number of strings: %s%n",
-                name, country, style, timePeriod, numStrings);
+    public String toString() {
+        return "Guitarist: {" +
+                "numStrings=" + numStrings +
+                '}' + '\n' + super.toString() + '\n';
     }
 }

@@ -13,8 +13,13 @@ public class Musician {
         this.timePeriod = timePeriod;
     }
 
-    public void show() {
-        System.out.printf("Musician Name: %s, Country: %s, Style: %s, Time period: %s%n",
-                name, country, style, timePeriod);
+    @Override
+    public String toString() {
+        return "Musician: {" +
+                "name='" + name + '\'' +
+                ", country='" + country + '\'' +
+                ", style='" + style + '\'' +
+                ", timePeriod='" + timePeriod + '\'' +
+                '}';
     }
 }

@@ -12,10 +12,14 @@ public class Song {
         this.playlist = playlist;
         this.youtubeURL = youtubeURL;
     }
-    public void show(){
-        System.out.printf("Title: %s%n" , title);
-        musician.show();
-        System.out.printf("Play list: %s%nYoutube URL: %s%n%n", playlist, youtubeURL);
-        }
+
+    @Override
+    public String toString() {
+        return "Song: " +
+                "title='" + title + '\'' +
+                ", playlist='" + playlist + '\'' +
+                ", \nyoutubeURL='" + youtubeURL + '\'' +
+                '\n' + musician.toString();
     }
+}
 

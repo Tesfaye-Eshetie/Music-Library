@@ -9,8 +9,9 @@ public class TrumpetPlayer extends Musician {
     }
 
     @Override
-    public void show(){
-        System.out.printf("Musician Name: %s, Country: %s, Style: %s, Time period: %s, Trumpet type %s%n",
-                name, country, style, timePeriod, trumpetType);
+    public String toString() {
+        return "TrumpetPlayer: {" +
+                "trumpetType='" + trumpetType + '\'' +
+                '}'+ '\n' + super.toString() + '\n';
     }
 }
